@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <script src="main.js"></script>
+  <style type="text/css"></style>
+</head>
+<body ng-controller="moduleAppController">
+  <div>
+    <label>text:</label>
+    <input ng-model="text" type="text"/>
+    <p>{{text}}</p>
+    <div directive1 in-param="text" out-param="useOutParam"></div>
+    <p>{{useOutParam}}</p>
+  </div>
+</body>
+</html>
